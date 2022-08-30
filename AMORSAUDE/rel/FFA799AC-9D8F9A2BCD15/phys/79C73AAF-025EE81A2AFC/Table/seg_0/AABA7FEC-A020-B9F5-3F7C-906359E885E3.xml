@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CANAL_CONFIRMACAO" directorySegmentName="seg_0" id="AABA7FEC-A020-B9F5-3F7C-906359E885E3">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nome" id="41A40363-D128-FBA1-E0D0-2BFFEE346B6C">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="id" id="7F4589D8-3B0C-9712-30AA-8978C3B63926">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_4a8be9c81caad6d85ff5932ac23" id="2A7F83E9-E1D9-301F-4EBA-8FE6F055B8F9">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_4a8be9c81caad6d85ff5932ac23" id="6C364529-C11E-5E29-9A49-ACD2A6A21246">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

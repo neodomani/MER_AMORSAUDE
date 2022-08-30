@@ -1,0 +1,261 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="802F1DD7-8395-054D-1E0E-F7F9A8059787" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="ATENDIMENTO">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atendimentos do sistema, cada atendimento possui um relacionamento com a agendamento,paciente,profissional,clinica e prontuario, e caso possua um pré-atendimento também ira ter relacionamento único]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>BDB0E8D7-88E6-D305-407B-34C7C4F0BA62</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="8DBA69C9-A6D6-2EB8-516A-C74A238C846B">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do atendimento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FCAFA9DF-ED56-A21F-8790-81A7F6CB5122</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="AGENDAMENTO_ID" id="31729A9F-44C3-5F27-2C0D-28D687488DCF">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do agendamento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>98A9E46A-48CC-1DC7-D080-2DF84E3D4B11</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EE3B4D1-A6D1-FD6C-3985-1ECB3CB140A5" referredColumn="35668E53-9BC9-2BF3-CC0A-F63B0BB4B1A0"/>
+</associations>
+</Column>
+<Column name="PREATENDIMENTO_ID" id="58196AE5-F065-13DE-20FF-D10E58D3E83E">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do pré-atendimento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>C6A305E0-6167-28C4-7C9A-9BC10E9352D7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTE_ID" id="40B87FAB-1CDB-BA9E-D1CB-D9C0FDE81459">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do paciente]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FBF0B5AC-91CC-6DF2-8179-C52F1B47DF67</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEB69F20-2000-4DE1-DC7F-F7F9778A0718" referredColumn="08290199-9473-46C3-D7BE-82AC3DDF849D"/>
+</associations>
+</Column>
+<Column name="PROFISSIONAL_ID" id="B36A39DD-61FF-7E6E-B66C-D4B39280D7ED">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do profissional]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>455AEE5D-0FDD-6A70-2223-983C4C68066F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32A9BA0B-29F1-0C3C-EBC3-C7FCA2E863D5" referredColumn="7A9B71B1-5C54-BA59-AAAC-71D5B9EAA9C5"/>
+</associations>
+</Column>
+<Column name="CLINICA_ID" id="B69B7430-CDE3-FBF2-6D2E-EE129A5BC7CE">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da clinica]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>48C518EF-CE5C-0896-06F0-FDAEC23BB125</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0D0D596-AEC4-D430-90FC-A1AFAF88E64A" referredColumn="459318DE-3C3A-05E3-123A-D12438E6A2A3"/>
+</associations>
+</Column>
+<Column name="PRONTUARIO_ID" id="114F2AD7-844E-0060-EF12-7398E9CB36AD">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do prontuario]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>C008AFC5-0B63-DA6D-DA01-5545F5EE71F9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB31901B-8353-ACB7-C305-4EFBC6D95817" referredColumn="69E83765-42DC-3E33-C90D-95927F8936EE"/>
+</associations>
+</Column>
+<Column name="STATUS" id="91CC63AC-5C4F-1363-EC23-1D012D2EF22A">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do atendimento, pode ser: finalizado, aguardando atendimento, aguardando pré-consulta, em consulta e faltou]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>8231E4C1-0054-8F49-6A48-65DFED8D3756</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA" id="DCCB0D08-BFC3-DA69-FC3A-6DF9BF453EBD">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dia do atendimento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>576D4F5B-8583-8A60-CC66-4CF6B2EBF295</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_PRECONSULTA" id="A5396F5F-AAF3-A1B7-1ED1-1C4A82F38553">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo para definir se o atendimento é uma pré-consulta, pré-consulta é atendimento realizado por técnico ou enfermeiro antes de ser realizado pelo médico]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>A4FBDDEE-00D2-9725-722B-66FDFE13A705</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT055</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FINALIZADO_AUTOMATICAMENTE" id="92BF8A9E-0120-D17E-E9D5-252AD659FFBF">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag para identificar se o atendimento foi finalizado automaticamente via Cronjob]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>BF73AC16-E784-ADF9-57BC-15A67D6F559C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT055</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CD5BFC8-0D2F-4A47-3B78-4BEE83A1D926" name="ATENDIMENTO_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FB064DFA-5CA4-9BB1-5597-3C4F93228256</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DBA69C9-A6D6-2EB8-516A-C74A238C846B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3A87EA9-D059-99C0-6FC2-BC24505AD110" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0019916">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>77BDF8ED-67AA-07FE-51D4-D6903D51BC5D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DBA69C9-A6D6-2EB8-516A-C74A238C846B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73606F64-046F-914B-CDDB-8573EF53319C" name="FK_AGENDAMENTO_ID_X_ATENDIMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31729A9F-44C3-5F27-2C0D-28D687488DCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31569A7C-2F87-0094-3F4D-6C208AEFD95A" name="FK_CLINICA_ID_X_ATENDIMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B69B7430-CDE3-FBF2-6D2E-EE129A5BC7CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D0BC579-82F9-5539-1BEC-93EBEF6A3ABC" name="FK_PACIENTE_ID_X_ATENDIMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40B87FAB-1CDB-BA9E-D1CB-D9C0FDE81459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69747765-D460-C6CF-3580-D8A351A00F8F" name="FK_PROFISSIONAL_ID_X_ATENDIMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B36A39DD-61FF-7E6E-B66C-D4B39280D7ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0AFCE36-AEDD-5502-3A02-2DB34C01F262" name="FK_PRONTUARIO_ID_X_ATENDIMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="114F2AD7-844E-0060-EF12-7398E9CB36AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E4B6B2B2-8D4C-2678-E5C5-6863A8AA5FCF" containerWithKeyObject="0B6703C7-9F5D-E36C-C989-45611382F52A" localFKIndex="F9A699AA-A1FB-9B22-470B-3D1A27D3452E" name="FK_ATENDIMENTO_RISCOS_RISCO_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>495FD754-6E00-A683-EFFE-B05435F9F217</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.GESTAO_CUIDADOS_RISCOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>51DBCF0F-B391-0334-096D-70E052DBE778</referredTableID>
+<keyObject>0E9D6953-934B-E8CC-482A-59088D96FAEA</keyObject>
+<referredKeyID>0E9D6953-934B-E8CC-482A-59088D96FAEA</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

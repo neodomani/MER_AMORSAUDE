@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77C78986-4396-657B-764D-63489663AB18" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="HISTORICO_AGENDAMENTO">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Log de alterações agendamentos do sistema]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FE865BEB-6F0D-DD64-DA18-D90AD858C5B7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7CC3DC8A-D2FA-0B43-504C-11CBD18CAC6E">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do log]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>1D1D4CA6-D2FF-ED8E-7ED6-EB4E0D971074</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="USUARIO_ID" id="42FBF9CB-4DFD-6E3F-CBF5-D6B9246651BB">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[usuário que realização a ação]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>CA866445-2116-26F3-5C6E-575147005B11</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B025178-22EE-6B5A-71D6-3E09E034039F" referredColumn="7A9B71B1-5C54-BA59-AAAC-71D5B9EAA9C5"/>
+</associations>
+</Column>
+<Column name="AGENDAMENTO_ID" id="E15B33D0-D088-EFE4-03ED-147FD33025D7">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do agendamento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>177BDF8B-5B3E-2187-62A3-29669C4271AD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0045DB8F-EEA9-2211-529B-153D7FA54CC8" referredColumn="35668E53-9BC9-2BF3-CC0A-F63B0BB4B1A0"/>
+</associations>
+</Column>
+<Column name="ACAO" id="396FC0DC-53CB-DCF9-E7C8-127A1BD1B0E7">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[ação do usuário podendo ser, agendou, desfez recebimento, lançou o recebimento, atualizou e editou]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>25828E50-5442-7AE7-A695-045B5590A74B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANTERIOR" id="C362236B-DBB8-D598-5BF8-019A89CB98AA">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dados do agendamento antes de ser alterado]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>ED27C85B-523B-78DF-2EB7-A67A1481D388</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA" id="FF378F8F-20B4-2686-1F61-1D5399A8E921">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da alteração]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>396E915A-ED9D-84C0-D6EE-6890224A9859</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON" id="42D8A450-BFB7-C125-BADD-A0C543BA96D7">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Motivo da alteração]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>8D66A40B-5B7A-4848-9637-7C49B625BC51</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0452ADB1-4216-EC6D-10B4-2CB3398552E2" name="HISTORICO_AGENDAMENTO_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>DE61975B-F093-0562-1FF7-61B218FAD192</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CC3DC8A-D2FA-0B43-504C-11CBD18CAC6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C54815A-E66F-7923-5A83-EB9633A76BB7" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020199">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>239BB83A-2D98-D4BB-DE45-BA834D332E63</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CC3DC8A-D2FA-0B43-504C-11CBD18CAC6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5F4D9C1-F4BA-3604-0ED7-F5B36418533B" name="FK_AGENDAMENTO_ID_X_HISTORICO_AGENDAMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E15B33D0-D088-EFE4-03ED-147FD33025D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B499E925-0182-8C38-1F5E-C2E8D3666CF4" name="FK_USUARIO_ID_X_HISTORICO_AGENDAMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42FBF9CB-4DFD-6E3F-CBF5-D6B9246651BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

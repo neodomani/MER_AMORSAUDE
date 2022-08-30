@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1C5FA80D-CEE4-F659-023A-DEF012773DA7" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="TISS_CONFIG">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lista da configuração tiss]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>B754680F-268F-383E-8472-9F9B33C9C8C1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTA_ID" id="7E7C52FD-4563-B3FB-B198-281057635006">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>CA07A8F5-A42C-61B2-0839-4617ADF6FDB1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80EC07DE-8E16-4444-6C13-F7C61CB522B0" referredColumn="0B7C2AC0-D78E-FCDD-2123-165D96FE38FB"/>
+</associations>
+</Column>
+<Column name="TIPO" id="6918C66C-D942-C45C-4E8B-0956E7B6DC37">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo da config tiss]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>5B775BD0-D7C8-40FD-4E37-EA66B584D145</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL" id="8B3647D8-B20E-BA8F-A50C-C7A90FC3F771">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[url da config]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>D833952B-6ECD-DDD8-8583-1CAEE49CE1C0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PRESTADOR" id="EAAD6A21-AD1D-5867-8A42-C0159EEE2324">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo do prestador]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>14DA12A1-1280-2744-26C6-30886E091CBA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGISTRO_ANS" id="98A3566B-20F2-E01E-EF19-915E6F3C6351">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro ANS]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FCB85E82-2D35-1BB5-9017-349DB0437CD9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PADRAO" id="5CDBCA35-4400-6EA2-6ABA-7750D3027DA0">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Padrão tiss]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>07107EA4-9C49-4899-B1F4-9663E9B2070C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_CONTRATADO" id="A3D489B8-5FB7-DD1E-4ECA-3818CECC9675">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do contratado tiss]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>EEEA331A-5DFC-0E86-62C9-117CDB651AD3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEQUENCIAL" id="91D4E6C0-C04B-B96E-15C1-8140705C389B">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero sequencial da guia tiss]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>731962BB-D782-8C1C-1E18-FBC7FDDC3A7A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFDEAD16-88D5-B10B-E0A9-67B779E3B805" name="TISS_CONFIG_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>5B0AA485-08A8-CD16-C6C0-553803AC8C15</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E7C52FD-4563-B3FB-B198-281057635006"/>
+<colUsage columnID="6918C66C-D942-C45C-4E8B-0956E7B6DC37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FFC2E75-9F12-739C-1575-879DA51A9941" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020594">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>DAF9DCBC-6D9B-3B5C-C763-FE1FA1A25D81</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E7C52FD-4563-B3FB-B198-281057635006"/>
+<colUsage columnID="6918C66C-D942-C45C-4E8B-0956E7B6DC37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66DA8D04-DF3A-8D3A-6BB1-533770B47541" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXTISS_CONFIG_CONTA_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>AE07960F-EB05-2AC1-F37B-96B321DFBBE6</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E7C52FD-4563-B3FB-B198-281057635006"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D7E2CFE-D0A1-7710-AE81-9DDEFC12A4BB" name="TISS_CONFIG_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E7C52FD-4563-B3FB-B198-281057635006"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

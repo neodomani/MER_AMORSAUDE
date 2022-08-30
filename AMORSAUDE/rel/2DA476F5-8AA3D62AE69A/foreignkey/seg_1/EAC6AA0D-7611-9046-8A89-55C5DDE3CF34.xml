@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="EAC6AA0D-7611-9046-8A89-55C5DDE3CF34" containerWithKeyObject="33DF672B-A8C3-9B0E-CECD-5B96F85E5B1E" localFKIndex="C96DC8A6-1444-11E5-F620-AE170849871F" name="FK_GUIA_SADT_LOTETISS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>F3274DF2-2F1E-4137-DBBE-36FF09206881</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.LOTE_TISS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>91426BD3-7ED7-31FC-E12A-3321594A59E8</referredTableID>
+<keyObject>6FA9CC15-BA4C-6EBA-9FD2-ED374B77F928</keyObject>
+<referredKeyID>6FA9CC15-BA4C-6EBA-9FD2-ED374B77F928</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

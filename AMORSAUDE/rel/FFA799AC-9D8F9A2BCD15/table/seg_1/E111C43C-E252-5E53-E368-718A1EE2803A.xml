@@ -1,0 +1,222 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E111C43C-E252-5E53-E368-718A1EE2803A" name="CAIXA_SALDOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:40:08 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<ordsAlias>table_115</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A21867D0-F32F-F877-8BF8-021308BD21ED">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:40:35 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<listOfValues>
+<valueDef value="A" description=""/>
+<valueDef value="F" description=""/>
+</listOfValues>
+<defaultValue>A</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FK_LOCAIS_ATENDIMENTO" id="B58C8668-3ED4-37F9-0969-C97FAC935F28">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:43:07 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19AA6F87-B68B-BD8F-154B-5B51B6E43D18" referredColumn="9303211C-3997-AF1B-4AAD-CB747C885403"/>
+</associations>
+</Column>
+<Column name="DATA" id="57BFEBB7-68CF-A95C-C64C-3B8F62DBD445">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:44:16 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALDO_INICIAL" id="FEA8F13E-A327-2167-DFDF-1A96D632AC61">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:44:43 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLG_STATUS_CAIXA" id="142CD218-5EBC-EDF9-EE89-38E58FC0B3FA">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:54:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATE_AT" id="4B09E8D7-9543-5006-DBE6-6B25AFE16D84">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:46:43 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_AT" id="0D408835-26F7-FF30-8266-BE5014F756EE">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:46:53 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLG_ATIVO" id="D1E38E83-25D1-DFEE-31D8-FCE129020C85">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:47:35 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_USER" id="D1FAC684-2BEC-228D-D9A2-37E8BCA104FF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:48:39 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06D80156-E0D6-C742-7CD1-609090DAD482" referredColumn="2AA7AE8E-723E-4197-DDB5-3F99E359CFCD"/>
+</associations>
+</Column>
+<Column name="CREATE_BY" id="40856E9A-E087-0BA2-B7DF-8B8104344918">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:48:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CBA4074-7C13-89C6-C93D-432BFE52BD5E" referredColumn="2AA7AE8E-723E-4197-DDB5-3F99E359CFCD"/>
+</associations>
+</Column>
+<Column name="IP_CLIENT" id="966599B8-CE38-62F6-A90B-C96A9DA84D82">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:49:48 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLG_FECHADO_ERRO" id="6D60D60E-6DBF-76DF-11F9-3EE2C69EDD78">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 15:03:20 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALDO_FECHADO" id="608577FD-4363-DC86-CF2A-B64A86D48FC5">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:19:22 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39683F2B-AC81-873F-8EE0-F4D62490513D" name="CAIXA_SALDOS_PK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:40:40 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A21867D0-F32F-F877-8BF8-021308BD21ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08C06981-EA55-040F-77E0-148CA266CA8C" name="CAIXA_SALDOS_LOCAIS_ATENDIMENTO_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:43:07 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B58C8668-3ED4-37F9-0969-C97FAC935F28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9BE38F6-A1DE-0536-03A2-E9EB5001795E" name="CAIXA_SALDOS_USUARIOS_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:48:39 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1FAC684-2BEC-228D-D9A2-37E8BCA104FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC217078-5071-473E-3DB8-D1A664DDD798" name="CAIXA_SALDOS_USUARIOS_FKv2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 14:48:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40856E9A-E087-0BA2-B7DF-8B8104344918"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

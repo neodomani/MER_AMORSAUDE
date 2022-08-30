@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="HORARIOS" directorySegmentName="seg_1" id="B961E2BE-E566-D24B-9F84-7294DAFF7F1B">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="deletado" id="003EB83B-C129-AC14-BE8F-FB06228FBFBF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="max_encaixes" id="2AA56BEB-ABC6-9EE5-D98A-15A990BBE448">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="id" id="32BDC8F9-6F84-A6C3-24E9-FC30F2394D39">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="dia_inicio" id="34D55161-5F12-08AA-3A6D-697C06D7C6DC">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="local_id" id="52CE1306-9AD4-B331-B967-ACF6BF60FC82">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="profissional_id" id="59366190-C6D0-5ECB-E3F9-CE7FD1842BC4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="max_retornos" id="5EBF3C18-2601-9AAD-63DD-7CA87D98B9A4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="dia_termino" id="5F783AD3-3A97-9C91-D205-45EAA9D0CC4A">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="clinica_id" id="6470A670-B9B2-2A2B-4E40-4BF112EE8111">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="dia" id="8CCBD299-6E0F-3EFD-DB6E-4D9A4C1CAD7E">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="hora_inicio" id="8D8898EE-E7DF-F362-A0CD-657EBE343EF8">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="agenda_online" id="91A4D512-606F-4E93-C432-380C7ABCCCAD">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="tempo_online" id="9DFF1063-5335-59AD-D958-52456E152B50">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="compartilhar_grade" id="A128B392-91AB-C6AC-0791-AE25BF0E445A">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="min_tempo_encaixes" id="B2EBED99-E718-17F6-6093-BC68A36720FB">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="max_encaixes_dia" id="BE81E70A-C8E0-F0C6-AE75-86073510A7FD">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="usuario_id" id="C1AE4384-D458-753A-6068-BFEFBC80932A">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="hora_termino" id="D18A7E68-ECD4-86F1-2D71-36ADCEB1EB1C">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="tempo" id="D34C5FBA-FF24-0F66-B793-B6667D388F6E">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="max_encaixes_dia_hora" id="D9192541-7785-82B5-9D58-EC01B22C27FB">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_98e1739c9859195dfe6d2f4919f" id="13DCBD86-9B8F-57D1-4DA6-5445E266205D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_98e1739c9859195dfe6d2f4919f" id="2082C247-9843-9CED-F7AC-B29E3EFDFE22">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

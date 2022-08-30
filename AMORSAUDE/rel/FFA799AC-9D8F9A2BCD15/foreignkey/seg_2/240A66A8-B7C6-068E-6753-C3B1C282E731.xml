@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="240A66A8-B7C6-068E-6753-C3B1C282E731" containerWithKeyObject="045E671E-5058-14A2-891E-D92A8A0D6DB6" localFKIndex="E167C20F-7948-D147-3F70-63E78A1A193E" name="TABELA_PADRAO_UNIDADE_CUSTO_USUARIOS_FKv1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 23:02:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>AMEI_APP_DEV.USUARIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6173424A-8B3B-7529-54C9-DF8AC1B7200C</referredTableID>
+<keyObject>BD533FF0-22A0-E546-6197-8D916A034C76</keyObject>
+<referredKeyID>BD533FF0-22A0-E546-6197-8D916A034C76</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

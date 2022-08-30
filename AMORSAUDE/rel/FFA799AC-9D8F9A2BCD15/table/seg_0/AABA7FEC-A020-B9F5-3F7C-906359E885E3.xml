@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AABA7FEC-A020-B9F5-3F7C-906359E885E3" schemaObject="5C313807-8F51-7784-4CA0-E296B0921DE2" name="CANAL_CONFIRMACAO">
+<sourceDDLFile>AMEI_DEV.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:41:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>B47083B0-7E33-5C0C-9156-FC524535673D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7F4589D8-3B0C-9712-30AA-8978C3B63926">
+<sourceDDLFile>AMEI_DEV.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:41:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>13496B03-91DB-03B8-4FC5-2118E4469ECE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="nome" id="41A40363-D128-FBA1-E0D0-2BFFEE346B6C">
+<sourceDDLFile>AMEI_DEV.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:41:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>08C79A37-C4C5-70DD-4E7E-1514B787D439</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C364529-C11E-5E29-9A49-ACD2A6A21246" name="PK_4a8be9c81caad6d85ff5932ac23">
+<sourceDDLFile>AMEI_DEV.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:41:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>EFEB32E6-E58F-D50E-0794-1EEC827CDEF6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F4589D8-3B0C-9712-30AA-8978C3B63926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A7F83E9-E1D9-301F-4EBA-8FE6F055B8F9" schemaObject="5C313807-8F51-7784-4CA0-E296B0921DE2" name="PK_4a8be9c81caad6d85ff5932ac23">
+<sourceDDLFile>AMEI_DEV.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:41:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>426F078D-4D5D-EFA5-0BF6-634483ED9C5F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F4589D8-3B0C-9712-30AA-8978C3B63926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

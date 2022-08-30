@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PACIENTE_CONVENIOS" directorySegmentName="seg_0" id="600D311A-8B48-AD29-D852-49A91E8688D4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="paciente_id" id="2D5AF9C9-5F0D-D9E4-99E0-53317657E475">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="convenio_id" id="3D52ABAA-F57C-934C-6347-6387210673AF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="carteirinha" id="6047AE13-EED7-989F-3C35-0EA5BE96E434">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="validade" id="8F2E8F6D-FF1A-AC99-A7F9-47A4DDEB6649">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="titularidade" id="92635B9E-0FC8-C49E-727A-97150B06B08A">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="id" id="B7361DBE-3E4C-2673-DE28-33EFFA27C482">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="plano_id" id="FB4975ED-A36D-DAA4-557D-D92C2B992A11">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_0d754e295d01ae1ca26030f72b2" id="8A3CC9EC-ECEA-EC40-C400-D1BF58D0FB19">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_35952d8500dda2d60fed297106b" id="42C3C1BE-40F8-7443-862C-A309536E67DB">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_3465e274014ff5f07cddc4f8f62" id="9F2FAFF2-E135-8CC8-A53D-4F18DC89C272">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_0d754e295d01ae1ca26030f72b2" id="32A65C47-0A05-3A21-F1DA-FCE9DADCEF80">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

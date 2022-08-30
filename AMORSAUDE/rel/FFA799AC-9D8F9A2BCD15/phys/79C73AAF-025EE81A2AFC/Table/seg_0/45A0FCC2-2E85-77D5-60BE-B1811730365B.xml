@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GRUPO_CLASSIFICACAO_MEDICA" directorySegmentName="seg_0" id="45A0FCC2-2E85-77D5-60BE-B1811730365B">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="34F2775A-9348-A5D6-E099-33EB076D866C">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_USER" id="3CBF06C4-948E-6EF5-9C32-548458CDC5EF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IP_CLIENT" id="3D687635-7343-C447-6A38-5059F266E3F4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FK_TIPO_CLASSIFICACAO_MEDICA" id="6A00B3D5-BE7F-0DFD-B8F8-47248A614C9D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_BY" id="9782B835-F754-3FB7-37CD-13BD4076F831">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRUPO_CLASSIFICACAO" id="9E97E423-11F9-4AB3-A403-E0A116C96287">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_AT" id="AA67D5A2-3F75-F1DD-5298-95240091F3C7">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLG_ATIVO" id="BE5DBFD8-C463-DDA2-8D1E-F8F60D86D20C">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="CREATE_BY" id="C41C150F-9642-692F-818B-F2CDB46EBA37">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_AT" id="D163D227-925A-E032-09E2-7CBF40546357">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="GRUPO_CLASSIFICACAO_MEDICA__IDX" id="D8B4BF41-3C56-DD3E-6BA1-667284FD1651">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GRUPO_CLASSIFICACAO_MEDICA_USUARIOS_FK" id="197F9BDC-A7BD-C348-9CD6-CFC81D17FE06">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GRUPO_CLASSIFICACAO_MEDICA_USUARIOS_FKv2" id="38874C87-24A4-C779-C2C7-642E65D465CF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GRUPO_CLASSIFICACAO_MEDICA_TIPO_CLASSIFICACAO_MEDICA_FK" id="F1AE7472-57E7-EABE-8B3B-082E234ADCD1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GRUPO_CLASSIFICACAO_MEDICA_PK" id="0A790BC7-49DF-85A7-1ACC-83A50B30B81E">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

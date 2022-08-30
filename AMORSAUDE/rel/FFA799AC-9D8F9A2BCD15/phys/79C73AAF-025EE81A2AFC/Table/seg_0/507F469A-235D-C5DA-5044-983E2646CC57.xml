@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CONTAS_BANCARIA" directorySegmentName="seg_0" id="507F469A-235D-C5DA-5044-983E2646CC57">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id" id="4E692475-7874-1908-4FE0-A55505AD6E04">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_ab46b78c87c47d6b2fc1553327d" id="8E9D50B4-2761-2F2D-E04A-538488B9FA4D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<schemaObject>5C313807-8F51-7784-4CA0-E296B0921DE2</schemaObject>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ab46b78c87c47d6b2fc1553327d" id="128571A0-24AA-9D7B-0759-6DE7FA079E02">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

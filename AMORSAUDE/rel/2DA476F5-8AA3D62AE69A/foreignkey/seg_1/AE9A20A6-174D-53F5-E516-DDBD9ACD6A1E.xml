@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="AE9A20A6-174D-53F5-E516-DDBD9ACD6A1E" containerWithKeyObject="C3073DFF-CB58-B114-C200-46935E45532A" localFKIndex="8EA93B59-52A1-106D-312D-F222CA1514F2" name="FK_NOTIFICATION_AGENDA_AGENDAMENTO1">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>5017E400-D2A2-FFA9-2AD8-143010028CE4</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.AGENDAMENTO</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>8177EB8D-0BFD-8DE4-B082-BFDE15EC569C</referredTableID>
+<keyObject>1261973F-0945-2651-F398-13908BB45C39</keyObject>
+<referredKeyID>1261973F-0945-2651-F398-13908BB45C39</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

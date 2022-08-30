@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ATENDIMENTO_ALERGIAS" directorySegmentName="seg_0" id="33849619-6240-8DF3-5F63-2DF1B317F1A8">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FK_ATENDIMENTO" id="27432F88-1068-6750-49B0-B11849C4E233">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="29C4BAC8-4683-F6C7-F570-2DF0F8B70EA4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANO_SINTOMA" id="2B656C17-8C44-96A2-D44B-BCEBAE7A5D96">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_BY" id="44CF9D19-D566-347D-9449-B09F88755327">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_AT" id="72E0F441-E0E6-D8FE-5BFC-359F7F6376C4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IP_CLIENT" id="7519598F-03E2-B324-4B93-2BDA3F48A638">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FK_ALERGIA" id="A0DC652A-DCDA-C283-1D4E-085EF6C0E170">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_USER" id="A7EF5EAF-B939-F137-CC1B-DEC1178E4AEC">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBS" id="BAB5CC4C-BD95-39EC-D9A7-1220040919AF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_AT" id="C384911E-99A0-2E5F-EC8E-74B05CC6A0C2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_ALERGIAS_ATENDIMENTOS_FK" id="0B1DD3D4-632C-DB23-BE20-2EB445AC1F46">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_ALERGIAS_ALERGIAS_FK" id="8616E9A4-AB6B-8992-C369-C861EB7FD8F0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_ALERGIAS_USUARIOS_FKv2" id="912A8998-6B44-DF7D-6F0B-6935D4B01090">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_ALERGIAS_USUARIOS_FK" id="A9F5CAB5-443E-C781-8DAF-8F48968174BA">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ATENDIMENTO_ALERGIAS_PK" id="845F1BDA-CCBA-3C74-1F17-D1AEB2F12B01">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

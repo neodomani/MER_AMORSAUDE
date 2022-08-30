@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_3" id="CBC7CEB1-78B5-2BAE-2DC0-92B757D1402B" containerWithKeyObject="48AC1A9F-5075-5FC9-55F2-B60AD7C9AD34" localFKIndex="650A52AF-FD4C-EB6D-AED9-5A74ECDFEF13" name="WHATSAPPTOKEN_FK0">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>51E6C9A0-AE13-4BE2-ABDA-C7C5BFC0FD14</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.AGENDAMENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8177EB8D-0BFD-8DE4-B082-BFDE15EC569C</referredTableID>
+<keyObject>1261973F-0945-2651-F398-13908BB45C39</keyObject>
+<referredKeyID>1261973F-0945-2651-F398-13908BB45C39</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

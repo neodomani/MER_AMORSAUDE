@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="0DE52B1C-51A9-75DA-E532-4834630CEC25" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SOAP">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lista de atendimentos soaps do sistema]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>8527D91E-18EE-C3FF-F18F-BB6841DE0095</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A45F9B39-D970-AE62-A928-3D922DF349B6">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do soap no sistema]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>043A20BC-90FB-1A51-7057-F3844A65D526</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="SUBJETIVO_ID" id="92A95BAA-C29C-B279-3502-BC185CDB4E5F">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do subjetivo]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>3D4F12F6-5139-011E-B123-93239A0C422C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAC3C44F-EAA8-1484-4D89-A96E3069C864" referredColumn="AA4BAC37-F5EC-0AD6-DBE1-359D47C95BC8"/>
+</associations>
+</Column>
+<Column name="OBJETIVO_ID" id="23E8DE2B-F864-D9B7-9433-611F573ADA81">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do objetivo]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FC62AA8A-6616-28EF-AC84-758A8F7907F5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="430CCEC5-38FA-13DD-50AB-3E9F63D0CF18" referredColumn="8AB2E4B4-E5FB-9621-CB91-050171B9F025"/>
+</associations>
+</Column>
+<Column name="AVALIACAO_ID" id="AD79489E-31DB-8D39-01C9-2458C6E048F4">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da avaliação]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>01A3D7F0-EA92-922C-7EE1-44EE08242A50</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9497D42-F396-E9ED-6361-7CEF0FBACB42" referredColumn="8316E3CC-B787-6E34-A3AE-6998FF53723D"/>
+</associations>
+</Column>
+<Column name="PLANO_ID" id="BED8E780-577E-A348-74DA-6877E82CC82C">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do plano]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>66572D22-09F0-C703-E4BB-33635880E825</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="368717DA-72C5-3B03-FC74-F920FEDC826C" referredColumn="B7294FB4-7993-93CC-34C0-8F7721A50259"/>
+</associations>
+</Column>
+<Column name="ATENDIMENTO_ID" id="C441DDCE-3185-6671-1700-65E62FF09813">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do atendimento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>41DCA903-ED3B-D36B-7860-0D7F00E27A31</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACE75FB3-58AD-44F6-2A51-7E4A32E1F783" referredColumn="8DBA69C9-A6D6-2EB8-516A-C74A238C846B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BF31A79-50E4-6E94-6A0C-6FB2A3553E6D" name="SOAP_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>A8312244-34F0-2C28-507B-AF39DEC97321</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A45F9B39-D970-AE62-A928-3D922DF349B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="595BBA4F-F8EC-D4B0-FA0E-74D787CA05BC" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020486">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>A9F1CBA7-CB65-570F-DC36-1AA1319D92FB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A45F9B39-D970-AE62-A928-3D922DF349B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EEA9588-ECB0-1EC1-9CB1-43B82E5DC349" name="FK_ATENDIMENTO_ID_X_SOAP_ATENDIMENTO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C441DDCE-3185-6671-1700-65E62FF09813"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45338475-F473-73F2-A9E7-E637638ED8AC" name="FK_AVALIACAO_ID_X_SOAP_SOAP_AVALIACAO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD79489E-31DB-8D39-01C9-2458C6E048F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A51FFF8A-009F-C72B-DAF1-2D13FA47E5BA" name="FK_OBJETIVO_ID_X_SOAP_SOAP_OBJETIVO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23E8DE2B-F864-D9B7-9433-611F573ADA81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DDBEFFE-DDE8-B674-BB3E-13C5704594B0" name="FK_PLANO_ID_X_SOAP_SOAP_PLANO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BED8E780-577E-A348-74DA-6877E82CC82C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52DCEF64-50C1-D283-C2C7-22DEE16C065A" name="FK_SUBJETIVO_ID_X_SOAP_SOAP_SUBJETIVO">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92A95BAA-C29C-B279-3502-BC185CDB4E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

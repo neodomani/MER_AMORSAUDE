@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_3" id="BFC768D9-9260-7390-AF23-23029180BC67" containerWithKeyObject="4379255E-3D68-98F7-A9FC-4A009395A253" localFKIndex="2DA941B8-D0C0-F282-8FE7-630A3A1A0248" name="SMS_SALDO_FK0">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>685D8374-424C-2561-0805-21C241A9B6D0</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.CONTAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4FA1D508-26C6-CBC0-3E6F-52E36F7C79F6</referredTableID>
+<keyObject>966AA90D-840D-D146-5FCC-C70740330DDA</keyObject>
+<referredKeyID>966AA90D-840D-D146-5FCC-C70740330DDA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

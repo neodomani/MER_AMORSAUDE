@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ATENDIMENTO_EXAMES" directorySegmentName="seg_0" id="8482AE59-3C7A-5F9F-4E97-B069ED060DCA">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="277E6418-AA8B-D152-1DAC-C3A747173AD0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_AT" id="3DA7CD05-A090-193D-1953-2C068F0F7B1E">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_REALIZACAO" id="4EF51B7E-CFFC-BD2C-5171-3F37A2DC74D4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_AT" id="593232B8-7E68-E031-9F1E-B2B8CCB39642">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FK_CLASSIFICACAO_MEDICA" id="685D48A7-B4A2-63B8-49B6-39E6B4A5BD5D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IP_CLIENT" id="73F75D4E-1673-6E11-7EED-BC3FB61929A0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_BY" id="923C8EA9-6EDC-64AF-737A-C83023C88623">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_USER" id="A2DB6A9F-91C0-DB39-5F72-E55F36F530D2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FK_ATENDIMENTO" id="AD55729E-EEBF-174B-2CC7-EF24136D1F5D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:52:31 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FK_PROCEDIMENTO" id="B27D6945-4F2B-C28D-0D99-6E14F509AC0F">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLG_ATIVO" id="B84D3944-01EE-E11B-5531-C2ED79E0C8D5">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_EXAMES_USUARIOS_FKv2" id="0F4767AE-9029-B7B4-9E08-638E8718ABD0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_EXAMES_ATENDIMENTOS_FK" id="2688E2D5-B41B-0D4E-27EC-9D6895578A30">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:52:31 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_EXAMES_CLASSIFICACAO_MEDICA_FK" id="6BFCAB88-84BE-9DD6-CDA0-0BB6C4C1C117">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_EXAMES_USUARIOS_FK" id="9F3DEAD3-FF85-B46F-CEA0-4B58DF315906">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATENDIMENTO_EXAMES_PROCEDIMENTOS_FK" id="E4D29AAA-9EB9-0659-7135-1392EA87B7C7">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ATENDIMENTO_EXAMES_PK" id="5EC94D33-5BEE-10B4-E993-00F48D5DA193">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

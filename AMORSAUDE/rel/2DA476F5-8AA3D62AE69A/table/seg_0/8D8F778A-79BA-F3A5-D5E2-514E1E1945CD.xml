@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D8F778A-79BA-F3A5-D5E2-514E1E1945CD" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="EXAMES_X_PROCEDIMENTOS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento entre exames e procedimentos]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>34307866-661E-9116-D829-E6C9D7F788EF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EXAME_ID" id="689F1589-27B0-515B-9613-B6E5D0C2F53B">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do exame]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>E9B8F171-80AD-6AF9-5FDE-87359B95E3D6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E07EC3CD-118E-95C4-18A0-CAA01AA63E33" referredColumn="F88A96F2-0904-AC2A-FED7-3DB9666B3124"/>
+</associations>
+</Column>
+<Column name="PROCEDIMENTO_ID" id="49D83E41-C347-2389-87C7-1D248C4ED25A">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do procedimento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>02C935C1-5E76-B8E9-C93F-B14A4385AF1C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F121354B-F540-8748-5DAD-F36210432060" referredColumn="2BAF3683-92AD-5E97-0129-2C192EA36D0D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="446A2D01-8E5C-F227-FD77-CDC6C5970E60" name="EXAMES_X_PROCEDIMENTOS_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>DAD5F9EE-F438-8545-C005-A19D95ED35DA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="689F1589-27B0-515B-9613-B6E5D0C2F53B"/>
+<colUsage columnID="49D83E41-C347-2389-87C7-1D248C4ED25A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B87DCF91-5BAD-FA01-F477-3837049BA756" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020130">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>28E7200E-20ED-9DBE-712B-610C50280E38</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="689F1589-27B0-515B-9613-B6E5D0C2F53B"/>
+<colUsage columnID="49D83E41-C347-2389-87C7-1D248C4ED25A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F4659DC-26AC-8176-DB7A-A549D1AD47B7" name="FK_EXAME_ID_X_EXAMES_X_PROCEDIMENTOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="689F1589-27B0-515B-9613-B6E5D0C2F53B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="874DE094-0A13-BAB3-CA8C-C34160A4DF57" name="FK_PROCEDIMENTOS_ID_X_EXAMES_X_PROCEDIMENTOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49D83E41-C347-2389-87C7-1D248C4ED25A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

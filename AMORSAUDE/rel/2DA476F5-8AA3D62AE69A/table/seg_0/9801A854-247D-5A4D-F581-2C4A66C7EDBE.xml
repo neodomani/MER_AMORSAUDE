@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9801A854-247D-5A4D-F581-2C4A66C7EDBE" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="CONTAS_SMS_PACOTE">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lista de compras de pacotes de sms de cada conta do sistema]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>369B9D93-A6E2-C546-4DC9-5335F2437CF6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B71B601B-2CA2-297A-9CAF-C568148161C3">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>F4BD5BE5-2E6A-892C-3109-B8DA45C8C9FE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="INVOICE_ID" id="AE3F0CC6-C2D0-AC68-F8AD-6E0799F607F5">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[id da fatura gerada na Iugu]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>00158CC3-CD58-B567-1A66-AD82E9E2807E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SMS_PACOTE_ID" id="848D0FDF-9E10-6AB4-4D77-8737E7E6E326">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do pacote de sms]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FD977400-C79C-86C2-5D08-5001119AA444</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8552BD2-C4AF-3830-E438-827177FF070D" referredColumn="C3B466E7-6E83-8229-09AC-1A9E4FBD011E"/>
+</associations>
+</Column>
+<Column name="CONTA_ID" id="24A78142-F546-0590-57C4-4EAAF8BF5399">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>7876CC14-57B4-0DE7-A57F-43202B94D5E8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFD19B72-BEC2-3621-85F5-01792E898B07" referredColumn="0B7C2AC0-D78E-FCDD-2123-165D96FE38FB"/>
+</associations>
+</Column>
+<Column name="DATA_COMPRA" id="56E88A8A-5941-C6FF-F0CE-D8F9977AC61C">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da compra do pacote de sms]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>ADBF80E0-FC31-C055-7F04-53A56922C229</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAGAMENTO" id="91D519E5-9759-AFF0-0011-2A55740B3082">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo para definir se o pagamento foi concluido]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>6158DC85-C094-CBAC-3287-A46E80699453</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT055</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_PGTO" id="CF99B007-0F81-532D-C6EC-CB1333D1265B">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora do pagamento do pacote de sms]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>4528B4F2-9E01-60FB-819A-7A2364E02796</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_VENC" id="EAB88236-6C4B-B956-AF23-FB4FC10D1111">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora do vencimendo do pacote de sms]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>ADE92D42-F365-FBC4-1683-B07AFAD5A353</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL" id="E1D53DFF-9E17-A1D6-D36D-7EF5307D5277">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>2CFD7FD5-6B4D-FC16-5B51-7CEDA75C6342</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7925519B-352E-E4C1-5686-BCFE5C0AEDF7" name="CONTAS_SMS_PACOTE_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>50265144-EB8F-01A2-1A80-E835E1FEF120</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B71B601B-2CA2-297A-9CAF-C568148161C3"/>
+<colUsage columnID="848D0FDF-9E10-6AB4-4D77-8737E7E6E326"/>
+<colUsage columnID="24A78142-F546-0590-57C4-4EAAF8BF5399"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8852E006-1F0C-96D4-E03E-1B51EB4661F5" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020038">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>A1D7D1BA-4A50-CF2F-1C40-FB32204A71B2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B71B601B-2CA2-297A-9CAF-C568148161C3"/>
+<colUsage columnID="848D0FDF-9E10-6AB4-4D77-8737E7E6E326"/>
+<colUsage columnID="24A78142-F546-0590-57C4-4EAAF8BF5399"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47945FC5-9E74-70D7-2398-9B4F10E60662" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXCONTAS_SMS_PACOTE_SMS_PACOTE_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>0CE2A7BF-E016-CDCE-7A12-FE253D0FFE7C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="848D0FDF-9E10-6AB4-4D77-8737E7E6E326"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B352C009-3E3C-A255-416D-9D7187013455" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXCONTAS_SMS_PACOTE_CONTA_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>2B925D3C-4AF9-7269-7427-11377075E2AA</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24A78142-F546-0590-57C4-4EAAF8BF5399"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC642B2D-B01B-5362-77B6-736738BD9B95" name="FK_PACOTE_SMS_HAS_CONTAS_CONTAS1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24A78142-F546-0590-57C4-4EAAF8BF5399"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB496A48-1B3D-C3FD-EF72-0E26DDA0BCDE" name="FK_PACOTE_SMS_HAS_CONTAS_PACOTE_SMS1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="848D0FDF-9E10-6AB4-4D77-8737E7E6E326"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

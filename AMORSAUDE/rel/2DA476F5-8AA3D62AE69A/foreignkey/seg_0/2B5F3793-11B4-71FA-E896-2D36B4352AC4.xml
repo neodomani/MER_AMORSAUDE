@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B5F3793-11B4-71FA-E896-2D36B4352AC4" containerWithKeyObject="E470771C-C99B-8A65-B0A3-2F88B90610E2" localFKIndex="AE900527-81EF-411E-EF46-D59AC068A311" name="FK_CHAT_MESSAGES_UPLOAD_FILE1">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>883F3EB2-7D69-84CB-B12D-04323B6B9E69</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.UPLOAD_FILE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B0B3E593-BC2A-CC32-6C7B-2ADC8C16D2B7</referredTableID>
+<keyObject>5860F485-77F4-C476-A51E-4DC0BB461112</keyObject>
+<referredKeyID>5860F485-77F4-C476-A51E-4DC0BB461112</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

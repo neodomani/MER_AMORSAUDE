@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4BB73370-4F03-96F0-754E-7BA0B1C8A39E" name="tabela_padrao_unidades">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:58:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<ordsAlias>table_80</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="783FE389-A7FF-709B-E7D6-D76A1E677AB7">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:59:19 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fk_tabela_preco" id="DC32AB8A-27F5-094C-C77E-7F0DD4E1D0B9">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:59:44 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7B83DFE-A92E-7B0A-DA38-6A226838D1A1" referredColumn="0C2F9B36-C5C8-C251-6339-B62A00E3F156"/>
+</associations>
+</Column>
+<Column name="fk_unidade" id="7770CB19-BB71-2C7B-A8C0-EA062A6B72BF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 16:38:13 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3105DEAC-B30A-2D40-ADEA-F55ED2296425" referredColumn="7E65C91E-8734-F5B7-FE98-7795EE91513A"/>
+</associations>
+</Column>
+<Column name="teste" id="DE83CBDA-761A-00B2-0406-BE176E2A4C82">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:02:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="ctemplateID" value="B7807138-26CA-1B0C-FF49-94EE86121153"/>
+</propertyMap>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBDA914E-6C49-A1F9-54AA-1D1F082946A6" name="tabela_preco_unidades_pk">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:59:34 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="783FE389-A7FF-709B-E7D6-D76A1E677AB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCE36B98-B0DB-229C-772F-CD7ADA40F5F1" name="fk_table_preco">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:59:44 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC32AB8A-27F5-094C-C77E-7F0DD4E1D0B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DD8D377-2335-AFB9-2AF4-EBA3EEABE928" name="fk_unidades">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 16:38:13 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7770CB19-BB71-2C7B-A8C0-EA062A6B72BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

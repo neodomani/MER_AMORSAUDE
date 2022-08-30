@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="675FA090-47CA-FE53-484A-17D00EAE941F" containerWithKeyObject="045E671E-5058-14A2-891E-D92A8A0D6DB6" localFKIndex="085546ED-F9BD-2883-645F-2D88749FD066" name="TABELA_PADRAO_UNIDADE_CUSTO_TABELA_PADRAO_UNIDADES_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 22:13:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>AMEI_APP_DEV.TABELA_PADRAO_UNIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E6B585CA-CAD7-7DD1-5570-713130750163</referredTableID>
+<keyObject>7A09A523-5A29-0DF1-9667-157A2520A029</keyObject>
+<referredKeyID>7A09A523-5A29-0DF1-9667-157A2520A029</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

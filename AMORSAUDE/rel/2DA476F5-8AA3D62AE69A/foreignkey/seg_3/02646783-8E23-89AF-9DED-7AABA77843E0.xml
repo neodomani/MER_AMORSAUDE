@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_3" id="02646783-8E23-89AF-9DED-7AABA77843E0" containerWithKeyObject="7B2FFA50-469D-C25D-2893-DE499CA38985" localFKIndex="1C344CEC-B2D9-AF58-5F83-C67C0C1D591D" name="SUBJETIVOS_X_MOTIVOS_FK1">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>CD2C2AC7-652C-9050-3FFD-CAA8E1EC76EE</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.SOAP_SUBJETIVO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9F458FC7-704D-4C07-13CA-6E7AA77F0419</referredTableID>
+<keyObject>60524758-86F7-2DAC-6E23-94D9E7783081</keyObject>
+<referredKeyID>60524758-86F7-2DAC-6E23-94D9E7783081</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

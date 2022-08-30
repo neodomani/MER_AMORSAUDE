@@ -1,0 +1,242 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="40987F48-E906-E375-45C8-A0916733798F" name="ATENDIMENTO_ANTROPOMETRICOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:05:58 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<ordsAlias>table_103</ordsAlias>
+<beforeCreate><![CDATA[DROP TABLE {table} CASCADE CONSTRAINTS;
+DROP SEQUENCE seq_{table};]]></beforeCreate>
+<endOfScript><![CDATA[create or replace TRIGGER {table}_trg_before_insert BEFORE
+    INSERT ON {table}
+    FOR EACH ROW
+BEGIN
+    :new.create_at := systimestamp;
+    :new.create_by := :new.last_user;
+    :new.update_at := systimestamp;
+END;
+/
+create or replace TRIGGER {table}_trg_before_update BEFORE
+    UPDATE ON {table}
+    FOR EACH ROW
+BEGIN
+    :new.update_at := systimestamp;
+END;
+/]]></endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6AA692CD-210B-45D3-7C21-B905CB8601BC">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:06:53 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_atendimento_antropometricos</autoIncrementSequenceName>
+</Column>
+<Column name="FK_ATENDIMENTO" id="A59BAE0E-BCBD-3870-2224-4F7EADEB46A9">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:12:26 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8255AD3B-BC2B-8F5C-CE42-03C012210F0B" referredColumn="E5F73D21-ADE5-0767-2D73-940294AF15F0"/>
+</associations>
+</Column>
+<Column name="PERIMETRO_CEFALICO" id="2D2F7500-ED86-444F-CD3D-30850DDFBDE7">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:08:52 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO" id="5762321E-7A39-9EB4-ECDA-D24B159E981C">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:09:17 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALTURA" id="8C481D86-4407-69D4-872B-AFA646B49680">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:10:07 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMC" id="547DC285-D1CF-24A7-927C-39C382EF66E2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:10:25 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIRCUNFERENCIA_ABNOMINAL" id="ED4875F8-2779-0F7C-33AD-8A7FE02AF9A7">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:11:23 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATE_AT" id="32EE70AF-EBBC-6123-08AE-5225A81BA80D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:41:45 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_AT" id="FFC60452-DDAD-392A-55E8-D041CCAF2E2A">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:41:45 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLG_ATIVO" id="5D92C994-C616-038E-0846-EAA9A636C538">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:42:22 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IP_CLIENT" id="A64A8CBD-4CF1-451B-2A57-72708FD307A7">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:42:37 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_USER" id="FC33267D-8632-D1A6-F7B3-5133F7DDC7E2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:43:08 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2A7FEC4-6A37-1F57-0AEC-D3E6AA8A823F" referredColumn="2AA7AE8E-723E-4197-DDB5-3F99E359CFCD"/>
+</associations>
+</Column>
+<Column name="CREATE_BY" id="DCB3A91E-0A74-6E54-D3D5-C9264CFBF76B">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:43:13 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D68B79EA-3F9F-BE65-D34A-DF413A4CBDBA" referredColumn="2AA7AE8E-723E-4197-DDB5-3F99E359CFCD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26E810D2-F0CF-7682-846E-34C72D71802E" name="ATENDIMENTO_ANTROPOMETRICOS_PK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:06:53 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AA692CD-210B-45D3-7C21-B905CB8601BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F42E5BD3-7DCA-AA62-F528-E11EEEF1AA54" name="ATENDIMENTO_ANTROPOMETRICOS_ATENDIMENTOS_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:12:25 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A59BAE0E-BCBD-3870-2224-4F7EADEB46A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1306C93-0593-A7D7-B477-D55D6B799806" name="ATENDIMENTO_ANTROPOMETRICOS_USUARIOS_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:43:08 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC33267D-8632-D1A6-F7B3-5133F7DDC7E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA1E32B3-FFCD-8E32-6E26-4D202C111157" name="ATENDIMENTO_ANTROPOMETRICOS_USUARIOS_FKv2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 03:43:13 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCB3A91E-0A74-6E54-D3D5-C9264CFBF76B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

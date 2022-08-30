@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="5260181D-2564-2DC0-28A2-5981A7E080A4" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="PROBLEMAS_X_SINTOMAS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento entre problemas e sintomas]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>AE4FEBE9-A318-568B-8378-40305C8731FC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROBLEMA_ID" id="BAC7ADEF-C49C-01CD-FE60-FFAB979E5D6E">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do problema]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>D52B2017-A8CC-6F1A-153B-2D5A2A92D022</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4EAF5F3-C35E-3F97-2263-90BEBBBF5B66" referredColumn="496851E4-6C82-C484-13E1-5A70E6B387CA"/>
+</associations>
+</Column>
+<Column name="SINTOMA_ID" id="C7BAC85E-0F39-2853-7E7B-490A9DD47CA5">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do sintoma]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>2892D7C2-6B9A-C8F7-B9F7-C537E9413518</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73E15542-1ADB-5CC7-8699-4F18E823A7A4" referredColumn="892FECF6-4E30-D6A3-B444-80140C6D1236"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A029B0C-5D41-B25A-72CE-BFE4C05EB91D" name="PROBLEMAS_X_SINTOMAS_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>4BFC7C48-AAB2-6644-A8F0-BDD324822FF0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC7ADEF-C49C-01CD-FE60-FFAB979E5D6E"/>
+<colUsage columnID="C7BAC85E-0F39-2853-7E7B-490A9DD47CA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AF9FB4F-5988-B731-67B8-83DA96182E1A" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020421">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>03C52EF9-392E-BAD6-3BBA-C9B88AC34E10</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC7ADEF-C49C-01CD-FE60-FFAB979E5D6E"/>
+<colUsage columnID="C7BAC85E-0F39-2853-7E7B-490A9DD47CA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF6D5887-FE27-F03F-27D7-4143B0EC5C2B" name="PROBLEMAS_X_SINTOMAS_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7BAC85E-0F39-2853-7E7B-490A9DD47CA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B69FD1B0-6EFF-3F36-E9C4-4818B655247A" name="PROBLEMAS_X_SINTOMAS_FK1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC7ADEF-C49C-01CD-FE60-FFAB979E5D6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

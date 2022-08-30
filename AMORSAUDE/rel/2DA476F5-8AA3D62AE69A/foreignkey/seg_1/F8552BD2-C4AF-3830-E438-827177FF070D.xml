@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="F8552BD2-C4AF-3830-E438-827177FF070D" containerWithKeyObject="9801A854-247D-5A4D-F581-2C4A66C7EDBE" localFKIndex="BB496A48-1B3D-C3FD-EF72-0E26DDA0BCDE" name="FK_PACOTE_SMS_HAS_CONTAS_PACOTE_SMS1">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>771A7773-9FA1-4EE5-1082-D830946C17EC</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.SMS_PACOTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E997E685-C8D1-5B4C-4C80-C6D514064831</referredTableID>
+<keyObject>0EFFC4D9-2C57-EDC6-0178-4863B80A7AF9</keyObject>
+<referredKeyID>0EFFC4D9-2C57-EDC6-0178-4863B80A7AF9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

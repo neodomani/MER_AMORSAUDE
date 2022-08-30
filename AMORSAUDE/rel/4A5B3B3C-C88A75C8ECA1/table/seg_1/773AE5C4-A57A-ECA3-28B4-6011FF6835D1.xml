@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="773AE5C4-A57A-ECA3-28B4-6011FF6835D1" name="tabela_padrao_unidade_custo">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:15:07 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<ordsAlias>table_84</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C73C0315-EB19-739D-70B5-B0B71B3D97F2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:16:00 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fk_tabela_unidade" id="EA5B525C-150F-AFE9-365E-3E91EB6ADD8D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:16:13 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50532B67-8133-0DBC-EA6C-E443399F00E2" referredColumn="783FE389-A7FF-709B-E7D6-D76A1E677AB7"/>
+</associations>
+</Column>
+<Column name="fk_procedimento" id="B0BA4028-BA04-21BD-0519-70A514E89232">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:17:43 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A92DF24-8ABE-45AB-C68D-634162BB001C" referredColumn="5108D093-BFDB-2915-55E9-87EE36C9050B"/>
+</associations>
+</Column>
+<Column name="parceiro_custo" id="FF6646A3-B396-E286-B659-61FC33DD7BD9">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:18:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="particular_custo" id="FA36B095-3444-7AF6-8455-CAEBB714E1C4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:18:50 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="teste" id="50359024-D9A1-C00F-1D8C-CE55BC42D4B0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:02:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="ctemplateID" value="B7807138-26CA-1B0C-FF49-94EE86121153"/>
+</propertyMap>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7CC8999-30E8-CC7F-7C7C-DCDD10A7E900" name="procedimento_tabela_custo_pk">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:16:00 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C73C0315-EB19-739D-70B5-B0B71B3D97F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59243BAC-662C-068E-6BE8-E40DD9486DFC" name="fk_tabela_unidade">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:16:13 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA5B525C-150F-AFE9-365E-3E91EB6ADD8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24CDB3DF-E456-3145-3D82-1C195DA905DD" name="fk_procedimentov3">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 19:17:43 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0BA4028-BA04-21BD-0519-70A514E89232"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

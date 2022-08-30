@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="BEAA0F3E-4F7F-7D67-4D35-C5F76DF2FA5E" containerWithKeyObject="BE404F0E-93F7-0B82-340C-7AF0C6C35050" localFKIndex="627CA9A4-03B6-6C9A-0D9F-445B031F59C9" name="cuidados_tipos_cuidado_fk">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 03:48:55 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>tipos_cuidado</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>342E325E-3546-396E-5D8B-60E8F553CF44</referredTableID>
+<keyObject>F04BD9E4-FD29-8966-6711-95CAE4D91D82</keyObject>
+<referredKeyID>F04BD9E4-FD29-8966-6711-95CAE4D91D82</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

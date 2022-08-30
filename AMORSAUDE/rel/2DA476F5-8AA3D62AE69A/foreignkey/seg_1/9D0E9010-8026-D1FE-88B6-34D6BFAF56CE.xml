@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="9D0E9010-8026-D1FE-88B6-34D6BFAF56CE" containerWithKeyObject="3C65B428-86F2-B7A5-2D23-B3AC348C811A" localFKIndex="A61A9EDB-6143-21BC-A84F-4CE044E5B30B" name="FK_ENDERECO_ID_X_CLINICAS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>70D418A2-7C3B-45F2-768D-8D7DC3F6E0A9</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.ENDERECOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>90620E4D-00E2-1AD3-D45A-604DA48B2B69</referredTableID>
+<keyObject>7A1DD5A9-ED3B-EAB3-E777-C2C8666548F8</keyObject>
+<referredKeyID>7A1DD5A9-ED3B-EAB3-E777-C2C8666548F8</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

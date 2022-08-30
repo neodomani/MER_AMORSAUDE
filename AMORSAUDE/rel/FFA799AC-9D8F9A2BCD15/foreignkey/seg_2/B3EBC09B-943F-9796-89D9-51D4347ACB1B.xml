@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="B3EBC09B-943F-9796-89D9-51D4347ACB1B" containerWithKeyObject="ACDA18A0-BA16-EF22-599E-6DD90EFEB035" localFKIndex="F4D4B7D8-ECDB-9473-458C-228B82FFA69E" name="LANCAMENTOS_FINANCEIROS_TIPO_OPERACAO_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:32:08 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>TIPO_OPERACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>61EE8BBA-AD15-4BCA-2970-9AF042FA68B3</referredTableID>
+<keyObject>7EBB3D24-90B1-8687-F365-D8939868F742</keyObject>
+<referredKeyID>7EBB3D24-90B1-8687-F365-D8939868F742</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

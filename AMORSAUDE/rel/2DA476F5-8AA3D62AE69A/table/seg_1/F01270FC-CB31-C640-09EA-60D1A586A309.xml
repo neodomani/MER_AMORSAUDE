@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F01270FC-CB31-C640-09EA-60D1A586A309" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="PACIENTES_X_GRUPOS_PROGRAMAS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lista de relacionamento entre grupos de programas e pacientes]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>0EE68F7C-1CF6-4739-4B78-549B39E8AFC2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="DBC28661-9744-1F1B-89C0-C1AEE1CFB22E">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do relacionamento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>1AC8BAC5-778E-7187-1D45-F8F885FE0550</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="PACIENTE_ID" id="F9BB9A13-0402-F332-962E-463612F97304">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do paciente]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>3DC5E15C-C8F8-88FC-B80B-31F2877B53F5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8465FCF1-CFC9-0442-43BE-BE601A727020" referredColumn="08290199-9473-46C3-D7BE-82AC3DDF849D"/>
+</associations>
+</Column>
+<Column name="GRUPO_PROGRAMA_ID" id="0A3F3DAB-4898-9A29-E296-F4EE2D86B737">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>795BD9F2-CBD7-A910-7273-17B4E6BAF9E7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C03BBCBA-7A64-8146-4E18-5844AE5575FC" referredColumn="4371D363-4BD4-1FB0-4FE7-8C8CAA6136E7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34B5B186-5F8F-0526-9763-3119A5F0809D" name="PACIENTES_X_GRUPOS_PROGRA_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>0C2A85B9-0DE1-7FCC-9026-3EC8919ECFE0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBC28661-9744-1F1B-89C0-C1AEE1CFB22E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75A59C29-8452-5B61-826A-95A8DFF2A093" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020408">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>2732E2E9-F7BB-B62D-9566-1CD659BA6491</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBC28661-9744-1F1B-89C0-C1AEE1CFB22E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C492EF3-3DDA-08F9-D0F7-F681C692763A" name="PACIENTES_X_GRUPOS_PROGRA_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A3F3DAB-4898-9A29-E296-F4EE2D86B737"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F45FBB73-A429-D03C-8B57-12DC1B311AD3" name="PACIENTES_X_GRUPOS_PROGRA_FK1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9BB9A13-0402-F332-962E-463612F97304"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

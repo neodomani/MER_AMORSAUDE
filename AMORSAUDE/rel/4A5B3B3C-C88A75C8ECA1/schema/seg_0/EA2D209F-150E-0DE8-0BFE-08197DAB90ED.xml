@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="AMEI_APP_HOM" directorySegmentName="seg_0" id="EA2D209F-150E-0DE8-0BFE-08197DAB90ED">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>C604A7C2-A3A9-EF5F-DAA1-AD7A78AA7AB9</importedID>
+</SchemaObject>

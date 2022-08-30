@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58C47006-9B77-1850-7918-1710E3039170" schemaObject="EA2D209F-150E-0DE8-0BFE-08197DAB90ED" name="procedimento_x_unidades">
+<sourceDDLFile>AMEI_HOM.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>2A7322BE-E9EC-74F2-71B2-A49448A7A1A3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="procedimentosid" id="17C8A54B-5A33-ADEE-F76E-513245AEF560">
+<sourceDDLFile>AMEI_HOM.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>D8EFDD7A-20F6-DAEA-0B6F-A022FBCE1997</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E61D7B1B-70FE-2309-4D08-EB1156D0A2B3" referredColumn="5108D093-BFDB-2915-55E9-87EE36C9050B"/>
+</associations>
+</Column>
+<Column name="unidadesid" id="0C0D7DBC-5AE7-E305-5DD7-24506F7F104D">
+<sourceDDLFile>AMEI_HOM.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>5F541753-484C-5506-7A26-F637F572431B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00C0859F-B301-7459-4770-BC089CB93D48" referredColumn="7E65C91E-8734-F5B7-FE98-7795EE91513A"/>
+</associations>
+</Column>
+<Column name="teste" id="7273538A-AFA9-59F8-49BC-A32DE8D887AB">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:02:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="ctemplateID" value="B7807138-26CA-1B0C-FF49-94EE86121153"/>
+</propertyMap>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A174DD38-638B-1FF0-4A4F-4DC81392123A" name="pk_877c1eccc6f812e29b3496b6a3a">
+<sourceDDLFile>AMEI_HOM.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>19A8FB73-2615-8C26-41D3-DB5AFCC75D3D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17C8A54B-5A33-ADEE-F76E-513245AEF560"/>
+<colUsage columnID="0C0D7DBC-5AE7-E305-5DD7-24506F7F104D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1494F6C-3034-21B5-382F-A589BF7DAA04" schemaObject="EA2D209F-150E-0DE8-0BFE-08197DAB90ED" name="pk_877c1eccc6f812e29b3496b6a3a">
+<sourceDDLFile>AMEI_HOM.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>9EFA96B8-0673-C4DB-43C1-C856BE2B9F9E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17C8A54B-5A33-ADEE-F76E-513245AEF560"/>
+<colUsage columnID="0C0D7DBC-5AE7-E305-5DD7-24506F7F104D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74F38033-EB6E-D3B7-7078-864D87D6A694" schemaObject="EA2D209F-150E-0DE8-0BFE-08197DAB90ED" name="idx_85cb64643c28aeb4e7c3dbf77e">
+<sourceDDLFile>AMEI_HOM.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>7A891200-A38C-2F3C-BE43-A5EE24B0E672</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C0D7DBC-5AE7-E305-5DD7-24506F7F104D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E3D81E7-A3A4-C7BF-111B-A211AE77D74B" schemaObject="EA2D209F-150E-0DE8-0BFE-08197DAB90ED" name="idx_aab426e8c22551b7cf22331ea8">
+<sourceDDLFile>AMEI_HOM.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:41 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>999E4785-9942-0F4B-0969-D7B3965BD964</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17C8A54B-5A33-ADEE-F76E-513245AEF560"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="442ADC84-2CB5-895E-C5F2-D081607843CC" name="fk_85cb64643c28aeb4e7c3dbf77eb">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:42 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C0D7DBC-5AE7-E305-5DD7-24506F7F104D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3C560F5-0063-60F8-B52E-FD0F1AF3AF23" name="fk_aab426e8c22551b7cf22331ea85">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-22 15:26:42 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17C8A54B-5A33-ADEE-F76E-513245AEF560"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

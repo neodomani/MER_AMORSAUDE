@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F89B5D88-9191-6EC0-CF6E-778D191CA8C1" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="CONVENIOS_X_PLANOS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo de relacionamento entre convênios e planos]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>FCAC50E3-FE6C-F6EC-723E-7E53E8B7E56D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONVENIO_ID" id="37065180-82CA-799D-59A5-8E7B0743D7B7">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do convênio]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>5439361D-A827-43B1-F4A3-94D6E2EEAFE1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E84A9333-05FD-43F5-D968-C9CD7857082D" referredColumn="5D9638D4-F2AF-7A6E-0893-9CB5ED1F6167"/>
+</associations>
+</Column>
+<Column name="PLANO_ID" id="7FCE0461-EAAD-ADC0-B7E9-370A3277FDBC">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do plano]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>3D0FA9B4-6E3E-BB64-03F0-23BCADB45195</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80F82B52-E1BE-EDA1-3FEA-A041D18C08BE" referredColumn="61FA1BE0-ED0D-A951-6148-C0046A7FD279"/>
+</associations>
+</Column>
+<Column name="INATIVO" id="BF2B11DC-2A5D-6D42-B7BD-0D68BCA051EC">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo para definir se o plano está inativo]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>5DEDDE95-A617-4C3E-4044-1A6B23C98284</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT055</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9506D8D0-EB30-BC82-7390-530C920B5A36" name="CONVENIOS_X_PLANOS_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>E641120B-02FB-E7BA-D461-AF1EC6BEF8CB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37065180-82CA-799D-59A5-8E7B0743D7B7"/>
+<colUsage columnID="7FCE0461-EAAD-ADC0-B7E9-370A3277FDBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="866ED5AC-23F6-3C81-BACB-93A3AB22A320" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020071">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>27E8F61C-875D-F436-77D5-817AD8DD65C3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37065180-82CA-799D-59A5-8E7B0743D7B7"/>
+<colUsage columnID="7FCE0461-EAAD-ADC0-B7E9-370A3277FDBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B473992-6FBB-B885-9789-B7B4914E2D2D" name="FK_CONVENIO_ID_X_CONVENIOS_X_PLANOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37065180-82CA-799D-59A5-8E7B0743D7B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="363F0ED7-C822-0068-6DC0-DCCCDEFBF007" name="FK_PLANO_ID_X_CONVENIOS_X_PLANOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FCE0461-EAAD-ADC0-B7E9-370A3277FDBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

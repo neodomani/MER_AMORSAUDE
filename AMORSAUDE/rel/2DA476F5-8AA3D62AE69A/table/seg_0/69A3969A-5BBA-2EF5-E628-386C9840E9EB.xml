@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69A3969A-5BBA-2EF5-E628-386C9840E9EB" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="CAMPANHAS_PROCEDIMENTOS_VOUCHERS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relação de procedimentos pertencentes a uma campanha de vouchers]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>F4460EB9-DBF3-E757-17EF-106914F566E3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CAMPANHAS_VOUCHERS_ID" id="AEA0352F-530E-CFAE-6AF3-D8B79AD81E4F">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relação com os vouchers da campanha]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>10A900B9-6D33-E99E-9C14-00F3E7DCBE5D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="718C93B0-4826-B0A1-69F1-F698E2E257A9" referredColumn="5FF5974C-B8EC-D619-C24F-3E3270793A2B"/>
+</associations>
+</Column>
+<Column name="CONTAS_X_PROCEDIMENTOS_ID" id="1DEF95DC-7A1D-917E-7F24-EF84A7F54AFE">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relação com os procedimentos da conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>2D952D21-BF90-5C8E-40AA-0497CA35ECDE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6BB7589-AEF1-BC69-C2A2-546611FD60A8" referredColumn="BAC73BC5-0073-F0EE-1A8B-B8D36959EA0A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BE5823D-8F36-5788-0983-561C2E3D33F8" name="CAMPANHAS_PROCEDIMENTOS_V_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>C8D3F078-E265-AC42-E972-9AE0498FB327</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEA0352F-530E-CFAE-6AF3-D8B79AD81E4F"/>
+<colUsage columnID="1DEF95DC-7A1D-917E-7F24-EF84A7F54AFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="610401AC-40D8-99AC-1D9F-007986318647" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0019944">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>464BB625-1490-D86C-4605-927F0FDA7164</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEA0352F-530E-CFAE-6AF3-D8B79AD81E4F"/>
+<colUsage columnID="1DEF95DC-7A1D-917E-7F24-EF84A7F54AFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9452E7D8-0EDF-1654-EF90-9F9DA3B506D2" name="CAMPANHAS_PROCEDIMENTOS_VOUCHERS_CAMPANHAS_VOUCHERS_ID">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEA0352F-530E-CFAE-6AF3-D8B79AD81E4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E5C95F6-FDDC-B3D8-86EE-F0D9128ACB49" name="CAMPANHAS_PROCEDIMENTOS_VOUCHERS_CONTAS_X_PROCEDIMENTOS_ID">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DEF95DC-7A1D-917E-7F24-EF84A7F54AFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

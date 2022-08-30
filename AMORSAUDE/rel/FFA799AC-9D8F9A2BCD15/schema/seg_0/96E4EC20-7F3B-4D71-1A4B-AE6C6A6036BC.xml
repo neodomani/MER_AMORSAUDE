@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="AMEI_COMMUNICARE2" directorySegmentName="seg_0" id="96E4EC20-7F3B-4D71-1A4B-AE6C6A6036BC">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 02:14:50 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</SchemaObject>

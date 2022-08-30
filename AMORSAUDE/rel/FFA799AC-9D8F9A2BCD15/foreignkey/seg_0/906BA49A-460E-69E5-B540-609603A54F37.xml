@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="906BA49A-460E-69E5-B540-609603A54F37" containerWithKeyObject="0B25903C-09E5-ECE1-5FF8-7E4D62BE5F53" localFKIndex="B2D5A2AF-3B46-463D-E9C6-54D5B23E5B01" name="FK_2852437bba2e9feeff99820a282">
+<sourceDDLFile>AMEI_DEV.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:41:48 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>B6C36790-C064-CB28-86CC-0A4FA2401938</importedID>
+<referredTableLongName>AMEI_APP_DEV.CONTAS_BANCARIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>507F469A-235D-C5DA-5044-983E2646CC57</referredTableID>
+<keyObject>128571A0-24AA-9D7B-0759-6DE7FA079E02</keyObject>
+<referredKeyID>128571A0-24AA-9D7B-0759-6DE7FA079E02</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

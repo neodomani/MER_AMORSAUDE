@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF657B94-67BE-A715-01EC-1CCD5B3E3F0B" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="ENCAMINHAMENTOS_X_CID10">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento entre encaminhamentos e problemas cid2]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>46688A9B-B7B3-D3B8-509C-56E9E400F015</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENCAMINHAMENTO_ID" id="EC223F82-9357-9735-F573-40D24264404B">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do encaminhamento]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>AE9F7A5B-598C-C2DA-25E5-21FB6DD09ADC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8215B236-BF72-2F43-FA24-7AE04358657A" referredColumn="4275AB5D-6D22-2CB3-CDFC-A967DB5FB823"/>
+</associations>
+</Column>
+<Column name="CID10_ID" id="4BCE69AC-119C-9915-D881-013BEF3C1DC6">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do cid10]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>0797F4AC-9276-CC7C-4E8F-BA55967DBB1B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7E22066-69CA-29B9-A9C9-00B7DC4E04CF" referredColumn="5135360B-FC55-B33D-9F6B-31F528C92971"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DFE500D4-2EF2-AE28-ED50-675BB07CCBB6" name="ENCAMINHAMENTOS_X_CID10_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>D27A7C8C-424F-F4EF-0A2A-79A23B38FACB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC223F82-9357-9735-F573-40D24264404B"/>
+<colUsage columnID="4BCE69AC-119C-9915-D881-013BEF3C1DC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BE361D5-EE5C-ACBF-9D6B-D8ADD30BFFF7" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020105">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>2CAC9E67-FB08-FFD0-3C6F-2D2562323B14</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC223F82-9357-9735-F573-40D24264404B"/>
+<colUsage columnID="4BCE69AC-119C-9915-D881-013BEF3C1DC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5674B406-0130-0648-5299-222E3C0F1886" name="ENCAMINHAMENTOS_X_CID10_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC223F82-9357-9735-F573-40D24264404B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18D4F612-5D3F-2B81-29BA-BA13E7D986E2" name="ENCAMINHAMENTOS_X_CID10_FK1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BCE69AC-119C-9915-D881-013BEF3C1DC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

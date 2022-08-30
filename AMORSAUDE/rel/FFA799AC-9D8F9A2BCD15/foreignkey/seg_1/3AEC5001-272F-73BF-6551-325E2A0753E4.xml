@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="3AEC5001-272F-73BF-6551-325E2A0753E4" containerWithKeyObject="ED835174-F125-CE69-9917-DA66CCAE7B31" localFKIndex="A9E7E135-8EA0-A7C4-8328-AACDE85D1CE9" name="ATENDIMENTO_PROBLEMAS_CLASSIFICACAO_MEDICA_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 00:40:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>CLASSIFICACAO_MEDICA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>49E2BCD3-F50B-DF91-AC65-13ECBE88FE63</referredTableID>
+<keyObject>C5915381-3785-CB1B-815D-142B922F40CC</keyObject>
+<referredKeyID>C5915381-3785-CB1B-815D-142B922F40CC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

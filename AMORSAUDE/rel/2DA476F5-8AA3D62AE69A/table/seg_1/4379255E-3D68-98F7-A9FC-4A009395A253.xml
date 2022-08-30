@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4379255E-3D68-98F7-A9FC-4A009395A253" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SMS_SALDO">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lista da quantidade de sms de cada conta do sistema possui]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>4D95B14E-9217-F724-8916-2187F7F1A2C4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTA_ID" id="77CE9E0B-9364-334D-6BBB-D8E262FF2757">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>1CD0AF20-9AD3-AC14-81C7-7CD397D35C63</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFC768D9-9260-7390-AF23-23029180BC67" referredColumn="0B7C2AC0-D78E-FCDD-2123-165D96FE38FB"/>
+</associations>
+</Column>
+<Column name="QUANTIDADE" id="06CA3FA1-7193-067B-6FD2-A4A73A69E446">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>B1C01A8F-5807-BE9E-32DA-F4AC89874531</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="114E75E1-350D-BC76-F7E9-5FB204AA3877" name="SMS_SALDO_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>B54967CF-10B7-04A1-B6E4-4C9273B1D1C3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77CE9E0B-9364-334D-6BBB-D8E262FF2757"/>
+<colUsage columnID="06CA3FA1-7193-067B-6FD2-A4A73A69E446"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECB51A66-132E-BB04-797C-9E4FD643F79F" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020475">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>51DF6D15-D264-3DEC-F3FE-B50B8E288642</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77CE9E0B-9364-334D-6BBB-D8E262FF2757"/>
+<colUsage columnID="06CA3FA1-7193-067B-6FD2-A4A73A69E446"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4AB1294-1963-CD9B-32D1-7C17551AF778" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXSMS_SALDO_CONTA_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>5B603873-35DD-08D8-D720-2BE0D1BDA9CB</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77CE9E0B-9364-334D-6BBB-D8E262FF2757"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DA941B8-D0C0-F282-8FE7-630A3A1A0248" name="SMS_SALDO_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77CE9E0B-9364-334D-6BBB-D8E262FF2757"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

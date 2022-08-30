@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="85F05350-4DFB-2023-4788-393226F15A61" containerWithKeyObject="CEBD9210-928E-85E9-5FA9-84797382E86A" localFKIndex="9ADA413C-4EBD-0D07-C3C9-0D62E3D72DAD" name="atendimentos_pacientes_fk">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:56:57 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>AMEI_APP_HOM.pacientes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F7F7F1D-0CAD-214E-A36F-864720D726DA</referredTableID>
+<keyObject>98A716DF-087D-08DA-132F-C07374DD149A</keyObject>
+<referredKeyID>98A716DF-087D-08DA-132F-C07374DD149A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

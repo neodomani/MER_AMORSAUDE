@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="FBAAC4FA-2E58-601D-5A52-D0E6556D06D0" name="TIPO_LANCAMENTO_FINANCEIROS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:24:29 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<ordsAlias>table_121</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5EC215D9-A10C-ED6E-E629-00C183A56D9E">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:24:56 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_LANCAMENTO" id="C504C8FB-3444-A16E-41BE-DF735D0C4CB9">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:27:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLG_ATIVO" id="2E823154-769C-F375-163C-0F656598CB45">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:29:42 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IP_CLIENT" id="F819986C-9270-1A69-8A6C-02FE8CDB21C4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:29:42 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATE_AT" id="D94A9B2B-2277-C05A-78D1-97EFD929C6CB">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:05 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_AT" id="7E3E51C1-6462-57C1-A628-CA083879E6CF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:17 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_USER" id="F843B990-E35D-07B3-70B0-C66E966C313D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:58 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6A67EE5-19DB-E672-D42E-301FF32DAD2E" referredColumn="2AA7AE8E-723E-4197-DDB5-3F99E359CFCD"/>
+</associations>
+</Column>
+<Column name="CREATE_BY" id="E136EFF5-AD1A-67AA-AA70-5C406D0CC923">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:32:27 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8A44421-2798-584C-60BC-826F17DF4D5B" referredColumn="2AA7AE8E-723E-4197-DDB5-3F99E359CFCD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D316C78A-5BE1-BB1F-BBCB-0064A017AE9F" name="TIPO_LANCAMENTO_FINANCEIROS_PK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:24:56 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EC215D9-A10C-ED6E-E629-00C183A56D9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42A61921-3CA8-64AD-8591-34B72FDD0C40" name="TIPO_LANCAMENTO_FINANCEIROS__UN">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:27:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C504C8FB-3444-A16E-41BE-DF735D0C4CB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11B06DBF-B6B8-43FB-AAE2-2EE5243AE373" name="TIPO_LANCAMENTO_FINANCEIROS_USUARIOS_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:58 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F843B990-E35D-07B3-70B0-C66E966C313D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35BB4606-1E0C-CC18-4BA7-69071B90D4D3" name="TIPO_LANCAMENTO_FINANCEIROS_USUARIOS_FKv2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:32:26 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E136EFF5-AD1A-67AA-AA70-5C406D0CC923"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

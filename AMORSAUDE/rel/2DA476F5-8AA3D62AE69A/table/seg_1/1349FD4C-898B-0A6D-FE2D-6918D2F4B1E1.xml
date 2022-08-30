@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1349FD4C-898B-0A6D-FE2D-6918D2F4B1E1" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="TELECONSULTA_USUARIOS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento entre usuarios com acesso a teleconsulta e conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>913D80A0-07A6-F4E1-3563-D928525CF74F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USUARIO_ID" id="DDD243F8-F1B1-07FE-C734-D82D0E19C524">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do usuário]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>8EEBB4E9-B379-A9D9-0070-6938264C3336</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="191D2EFE-E33F-B374-F5A8-B72A3C009720" referredColumn="7A9B71B1-5C54-BA59-AAAC-71D5B9EAA9C5"/>
+</associations>
+</Column>
+<Column name="CONTA_ID" id="EECA02A2-22B6-FF30-C525-9579BC476DB8">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>8D0C7605-A58F-E5C8-D3E0-F6CB320FA54A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E4FC625-F88E-BB60-D4A5-0FF89C54A904" referredColumn="0B7C2AC0-D78E-FCDD-2123-165D96FE38FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B543799C-5CFC-C3A7-7007-3AC90F4656AF" name="TELECONSULTA_USUARIOS_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>AB3555C7-D641-A248-FEAF-89EE180FA13D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDD243F8-F1B1-07FE-C734-D82D0E19C524"/>
+<colUsage columnID="EECA02A2-22B6-FF30-C525-9579BC476DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7B313E2-7EE6-7E17-892F-2037F377AC49" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020559">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>97BD06C6-65C3-47E1-067A-67EC1313DD97</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDD243F8-F1B1-07FE-C734-D82D0E19C524"/>
+<colUsage columnID="EECA02A2-22B6-FF30-C525-9579BC476DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94ACDF9F-8775-0978-F265-3F9B40FC5CF1" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXTELECONSULTA_USUARIOS_USUARIO_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>AAC88639-06A7-F496-2455-82F7DE6BD724</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDD243F8-F1B1-07FE-C734-D82D0E19C524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83898B2B-2724-D1A2-428C-CAE046167EAE" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXTELECONSULTA_USUARIOS_CONTA_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>41B24DA8-32D0-F4FF-D317-88C0255267F0</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EECA02A2-22B6-FF30-C525-9579BC476DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75305D4D-34A5-E7A0-47FE-E356FE966B07" name="TELECONSULTA_USUARIOS_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDD243F8-F1B1-07FE-C734-D82D0E19C524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EDE2E81-9C20-34C2-45CB-50A4999F539D" name="TELECONSULTA_USUARIOS_FK1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EECA02A2-22B6-FF30-C525-9579BC476DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

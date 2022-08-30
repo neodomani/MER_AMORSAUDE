@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A9AAB848-2088-C11F-00EF-2BB5E881E45F" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="PACIENTES_PRONTUARIOSANTERIORES">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Armazena textos dos últimos prontuários que o usuário deseja manter o registro no atual para consulta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>954706E6-D0AE-15FB-8553-066432FCA80E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="4C5904EE-53F0-4885-B778-BD6AE4E53D8A">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>102A7BFB-5414-D5C3-2D45-CBF034590D38</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="PRONTUARIOS" id="31EB7CF3-C9A5-92DA-6C37-E9A6E1032B08">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>BFCC8070-BC12-03A7-FAB1-DCA2E4239E6B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTE" id="75B957D4-983D-F9B8-AFD1-4C2DD20CDB88">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>1CF5EEE1-B4C0-2915-9460-71ECFAB4F775</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4E2DB130-D7AE-05B9-531E-B1F6ECFE8A9F" referredColumn="08290199-9473-46C3-D7BE-82AC3DDF849D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B506F26-AEAA-4042-EFEE-967897166627" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXPACIENTES_PRONTUARIOSANTERIORES_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>A639CD17-BB83-266B-6ACF-77521DA40B61</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C5904EE-53F0-4885-B778-BD6AE4E53D8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BC496BA-C394-9077-2492-D5F2EBAA1C35" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="IDXPACIENTES_PRONTUARIOSANTERIORES_PACIENTE">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>69CE9065-6608-4BA4-C8B8-E53B5FB84186</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75B957D4-983D-F9B8-AFD1-4C2DD20CDB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E89380D0-C95B-0D42-22CF-5CFD230FFDDA" name="PACIENTES_PRONTUARIOSANTE_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75B957D4-983D-F9B8-AFD1-4C2DD20CDB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

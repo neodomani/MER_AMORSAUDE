@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="E1C47F6D-A145-D785-415A-4CCCCD3166E6" containerWithKeyObject="ACDA18A0-BA16-EF22-599E-6DD90EFEB035" localFKIndex="A9922E90-F1D9-8381-5A8E-A202FF3F7ACD" name="LANCAMENTOS_FINANCEIROS_CAIXA_SALDOS_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:28:34 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>CAIXA_SALDOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E111C43C-E252-5E53-E368-718A1EE2803A</referredTableID>
+<keyObject>39683F2B-AC81-873F-8EE0-F4D62490513D</keyObject>
+<referredKeyID>39683F2B-AC81-873F-8EE0-F4D62490513D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

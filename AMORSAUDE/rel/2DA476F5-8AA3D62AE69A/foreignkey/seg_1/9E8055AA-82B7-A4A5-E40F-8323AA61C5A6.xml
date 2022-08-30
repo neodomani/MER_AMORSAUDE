@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="9E8055AA-82B7-A4A5-E40F-8323AA61C5A6" containerWithKeyObject="B7FE39DC-B216-66BE-D4DB-B87BC6F545C1" localFKIndex="8637D63B-9BC8-F1E9-BC0D-FE50A4006002" name="FK_HISTORICO_LISTA_ESPERA_LISTA_ESPERA_ID">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>F38F7C0F-BB2C-4255-6DDA-F7C6520EA03B</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.LISTA_ESPERA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7ADFCCA5-51D0-D7BE-9CC6-FA0C16C3701F</referredTableID>
+<keyObject>8F0FA3FF-BED0-FB54-3997-BEABC62D3714</keyObject>
+<referredKeyID>8F0FA3FF-BED0-FB54-3997-BEABC62D3714</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

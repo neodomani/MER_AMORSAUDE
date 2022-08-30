@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2D426BAF-834B-5A70-7E90-41C99AEDDC67" containerWithKeyObject="E5D4154F-F5A7-3498-65D5-8ED7093D0A8F" localFKIndex="601D621E-4527-A503-154A-207336147AAA" name="FK_AVALIACAO_ID_X_AVALIACAO_X_CID10">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>9CC76AA3-904D-C8F4-5724-E69A7D7E3757</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.SOAP_AVALIACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0DD0593B-95D0-DB9A-78DF-CA8577318F50</referredTableID>
+<keyObject>09CE11B0-D4E0-8363-EC38-E01EE702E5B4</keyObject>
+<referredKeyID>09CE11B0-D4E0-8363-EC38-E01EE702E5B4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

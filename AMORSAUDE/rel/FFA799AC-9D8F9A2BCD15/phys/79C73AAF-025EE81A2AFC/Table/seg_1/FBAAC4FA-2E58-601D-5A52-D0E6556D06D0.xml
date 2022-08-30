@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TIPO_LANCAMENTO_FINANCEIROS" directorySegmentName="seg_1" id="FBAAC4FA-2E58-601D-5A52-D0E6556D06D0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:24:29 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FLG_ATIVO" id="2E823154-769C-F375-163C-0F656598CB45">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:29:42 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID" id="5EC215D9-A10C-ED6E-E629-00C183A56D9E">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:24:56 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_AT" id="7E3E51C1-6462-57C1-A628-CA083879E6CF">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:17 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_LANCAMENTO" id="C504C8FB-3444-A16E-41BE-DF735D0C4CB9">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:27:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_AT" id="D94A9B2B-2277-C05A-78D1-97EFD929C6CB">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:05 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_BY" id="E136EFF5-AD1A-67AA-AA70-5C406D0CC923">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:32:27 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IP_CLIENT" id="F819986C-9270-1A69-8A6C-02FE8CDB21C4">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:29:42 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_USER" id="F843B990-E35D-07B3-70B0-C66E966C313D">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:58 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TIPO_LANCAMENTO_FINANCEIROS_USUARIOS_FK" id="11B06DBF-B6B8-43FB-AAE2-2EE5243AE373">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:30:58 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TIPO_LANCAMENTO_FINANCEIROS_USUARIOS_FKv2" id="35BB4606-1E0C-CC18-4BA7-69071B90D4D3">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 19:32:26 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TIPO_LANCAMENTO_FINANCEIROS_PK" id="D316C78A-5BE1-BB1F-BBCB-0064A017AE9F">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:24:56 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="TIPO_LANCAMENTO_FINANCEIROS__UN" id="42A61921-3CA8-64AD-8591-34B72FDD0C40">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 18:27:47 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

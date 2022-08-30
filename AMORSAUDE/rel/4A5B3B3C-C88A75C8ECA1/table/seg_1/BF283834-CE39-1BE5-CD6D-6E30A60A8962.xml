@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="BF283834-CE39-1BE5-CD6D-6E30A60A8962" name="tipo_atendimento">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 03:07:22 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<ordsAlias>table_86</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="EC67BB05-A1FE-5C5D-72E1-88C2C1B14AEE">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 03:08:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_atendimento" id="C139D73F-F7BC-505F-58D7-CB28F86A2EC2">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 03:10:45 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="teste" id="6C0C1387-1C8E-CF3F-9A6E-E6F73DAC9055">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 11:02:30 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="ctemplateID" value="B7807138-26CA-1B0C-FF49-94EE86121153"/>
+</propertyMap>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED843E94-86CE-6E81-A093-1009A1D7F9E9" name="tipo_atendimento_pk">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 03:08:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC67BB05-A1FE-5C5D-72E1-88C2C1B14AEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85F4B4EB-31D1-C679-7DCD-449722937020" name="tipo_atendimento__un">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 03:11:10 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C139D73F-F7BC-505F-58D7-CB28F86A2EC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

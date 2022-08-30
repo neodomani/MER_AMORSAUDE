@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E8E414F-67C3-8C39-0A16-3DC56E7C5AEE" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="ASSINATURA_SOBREPOR">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[A sobreposição de assinaturas é usada para dar acesso a uma conta a recursos pagos a uma conta, o número de profissionais de nível superior disponivel nessa assinatura, considerando que os possiveis funções na tabela_oauth_users,
+o sistema considera atualmente dois tipos de assinatura, Iugu (Paga) e corporativa (Quando é preciso dar acesso as funcionalidades do sistema que são pagas de maneira temporária para novos clientes e internamente para nossos testes). Para que ela funcione, é necessário alterar o campo assinatura_ativa para true na tabela contas.]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>BA7342CE-0A85-1BE4-4AA1-68460128B2F8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTA_ID" id="F490D57B-F4FF-7369-A58A-D678EADD59D7">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>C576C7BB-73BA-6B48-5502-492AFB03EBCF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6F5B75D-D30C-8B23-BC81-01E7F2821987" referredColumn="0B7C2AC0-D78E-FCDD-2123-165D96FE38FB"/>
+</associations>
+</Column>
+<Column name="SUPERIOR" id="3B66E1BF-9C4C-B4CA-5107-B2886540DB80">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero de profissionais superiores, que de acordo com a tabela oauth_users a função 2 (profissional superior)]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>9C923688-F2F4-0FB2-801E-B4786E4AE126</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELECONSULTA" id="B98B520F-6D6B-5091-C4B4-E8D269ABC5BC">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de usuários liberados nessa assinatura para usarem o recurso de teleconsulta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>9CD2D2F4-90C5-EFBF-715E-B8A1D07668F9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGENDAONLINE" id="5B0A7B88-C369-3E98-4056-2B9490DDEA94">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de usuarios com agenda online, esse campo já está depreciado, já que o acesso a agenda vem com o numero de profissionais superiores]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>44C6E3FB-3820-7008-116C-9FD54A15381B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87571732-24EE-420B-37E6-67583018AA0E" name="ASSINATURA_SOBREPOR_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>81133AA7-905F-B683-AA59-6D2CA249D284</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F490D57B-F4FF-7369-A58A-D678EADD59D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E43B7AD4-E2FD-54DB-24B9-3A5355A111E2" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0019911">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>24C4A5B3-5453-4411-8368-635312CB51F1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F490D57B-F4FF-7369-A58A-D678EADD59D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC06CA32-DE1F-B3E5-240E-33B57D30FE7F" name="FK_ASSINATURA_SOBREPOR_CONTAS1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F490D57B-F4FF-7369-A58A-D678EADD59D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

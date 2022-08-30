@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CF2DA3B-3E0C-EDA3-63BC-7DEF9BDE48D9" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="CONTAS_USUARIOS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento entre contas e usuarios do sistema]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>38E5E898-807A-3B9E-2C9A-B31C363DD9E1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTA_ID" id="905A642F-8DE1-ED56-17BB-DA6815B13D4C">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id da conta]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>338C913F-490E-721C-2674-90F1BF779A46</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD175BEC-952D-04A0-16E3-D281A630DD73" referredColumn="0B7C2AC0-D78E-FCDD-2123-165D96FE38FB"/>
+</associations>
+</Column>
+<Column name="USUARIO_ID" id="46B24A84-26AD-0850-B936-720CD5A5F92E">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>846EB418-C0C7-5E90-4A9D-340858D04406</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C97C0203-1552-781E-A7EE-9336EFAE5CBD" referredColumn="7A9B71B1-5C54-BA59-AAAC-71D5B9EAA9C5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CA72679-676C-40F7-5D5C-EDEA164EE122" name="CONTAS_USUARIOS_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>A238E012-B1B6-1C9D-023B-62624A906B6F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="905A642F-8DE1-ED56-17BB-DA6815B13D4C"/>
+<colUsage columnID="46B24A84-26AD-0850-B936-720CD5A5F92E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="357F089F-4700-B693-58FB-4D5673CCA441" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020041">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>B505460C-52CA-CCDB-0048-C4442E85EE14</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="905A642F-8DE1-ED56-17BB-DA6815B13D4C"/>
+<colUsage columnID="46B24A84-26AD-0850-B936-720CD5A5F92E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F45C092-7ABF-7F99-2076-35F6D216BAD5" name="FK_CONTA_ID_X_CONTAS_USUARIOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="905A642F-8DE1-ED56-17BB-DA6815B13D4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="830DE0B4-C7DD-8142-BE16-6EA5CF7F15A6" name="FK_USUARIO_ID_X_CONTAS_USUARIOS">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46B24A84-26AD-0850-B936-720CD5A5F92E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

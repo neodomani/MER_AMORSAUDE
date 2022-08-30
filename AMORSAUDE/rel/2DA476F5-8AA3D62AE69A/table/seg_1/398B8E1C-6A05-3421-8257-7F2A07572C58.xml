@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="398B8E1C-6A05-3421-8257-7F2A07572C58" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="PACIENTES_X_FAMILIAS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relação entre o paciente e o parentesco]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>81511DFC-88D1-1DC7-42AA-912D058748E5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PACIENTE_ID" id="E7DE2551-1008-5E3B-302C-FBDBFB121999">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>EF6EDFFB-DE42-44E1-DF4F-9F229DF71CDD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CB9FB56-5059-E4AB-6D8E-47F3D896668D" referredColumn="08290199-9473-46C3-D7BE-82AC3DDF849D"/>
+</associations>
+</Column>
+<Column name="PARENTE_ID" id="A4990616-D2FD-895E-F00D-29F27952A12F">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>54DB6E4B-1134-4338-5D8C-3608AD9E8536</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5088C0EA-CFC6-D3B4-0E88-98A70A4F4272" referredColumn="DAACF27B-10A4-91A5-048A-14A496716C0A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADC3F332-73CF-2758-F2A0-145F046C2465" name="PACIENTES_X_FAMILIAS_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>154D019A-006B-E1D0-79F2-DE6914C55861</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7DE2551-1008-5E3B-302C-FBDBFB121999"/>
+<colUsage columnID="A4990616-D2FD-895E-F00D-29F27952A12F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7488731-C554-0B8D-2DB7-82596ED4760F" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020402">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>56F09E76-ABBE-8AAB-A484-80FCCAA6BD7D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7DE2551-1008-5E3B-302C-FBDBFB121999"/>
+<colUsage columnID="A4990616-D2FD-895E-F00D-29F27952A12F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06794705-1596-3093-550E-794CFF63E018" name="PACIENTES_X_FAMILIAS_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7DE2551-1008-5E3B-302C-FBDBFB121999"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD649CA4-AD88-59D5-C5BE-0CEB9BE76902" name="PACIENTES_X_FAMILIAS_FK1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4990616-D2FD-895E-F00D-29F27952A12F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

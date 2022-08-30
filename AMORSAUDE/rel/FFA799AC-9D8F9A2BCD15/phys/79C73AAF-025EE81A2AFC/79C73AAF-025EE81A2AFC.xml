@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignOraclev12cR2 class="oracle.dbtools.crest.model.design.storage.oracle.v12cr2.StorageDesignOraclev12cR2" name="Oracle Database 12cR2" id="BD2C2AC5-6F45-47EC-9363-FEB941E92EF9" siteID="79C73AAF-E1A7-E669-7DF0-025EE81A2AFC" siteName="Oracle Database 12cR2" siteType="14">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 04:18:09 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+</StorageDesignOraclev12cR2>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="2DC62028-3F8E-9403-2F13-CC1574551DD2" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="USUARIOS_X_ASSISTIDOS">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacionamento entre usuários e assistidos]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>BB628479-8621-170E-B39D-F7B0502273DD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USUARIO_ID" id="780B3EE5-C3CE-AF33-6F8E-509F820BE762">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do usuário]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>714B5617-69BA-B108-4C53-E4225A45410C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8831E315-AD36-E97C-7047-F9E89CD7AC36" referredColumn="7A9B71B1-5C54-BA59-AAAC-71D5B9EAA9C5"/>
+</associations>
+</Column>
+<Column name="ASSISTIDO_ID" id="8FB5D25C-E5F1-8CA7-E635-8A4E2BC2A5BE">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do assistidos]]></commentInRDBMS>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>BE619620-E206-466B-C9F9-00772B1CB325</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="220A68F9-E725-F745-337E-F1711F070FA6" referredColumn="7A9B71B1-5C54-BA59-AAAC-71D5B9EAA9C5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B76CE8B-F2AE-ED33-46C2-8EB4679DFA0C" name="USUARIOS_X_ASSISTIDOS_PK">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>D89E9449-9E8A-FDE5-2C80-3BB75D7E1D90</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="780B3EE5-C3CE-AF33-6F8E-509F820BE762"/>
+<colUsage columnID="8FB5D25C-E5F1-8CA7-E635-8A4E2BC2A5BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07B23DDF-8118-18B4-9DE7-B1F3DE33E647" schemaObject="0ED94835-CBC0-7908-B427-D90A44EB775C" name="SYS_C0020635">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>B772888C-AFA0-CB68-4438-DC624CC12560</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="780B3EE5-C3CE-AF33-6F8E-509F820BE762"/>
+<colUsage columnID="8FB5D25C-E5F1-8CA7-E635-8A4E2BC2A5BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EC15D95-7E33-D863-0470-4EDA7B2169BE" name="USUARIOS_X_ASSISTIDOS_FK0">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FB5D25C-E5F1-8CA7-E635-8A4E2BC2A5BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7F9CCD3-4B6B-9A27-E581-131B1B843FF6" name="USUARIOS_X_ASSISTIDOS_FK1">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:02 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="780B3EE5-C3CE-AF33-6F8E-509F820BE762"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

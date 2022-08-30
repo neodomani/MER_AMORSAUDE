@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1A72324-1520-C0B2-14C7-88AD5F1E0D86" containerWithKeyObject="842CFCDB-82A7-30C1-A33E-E170D94A0E26" localFKIndex="0DB639C3-5D9C-03B8-44EF-9787519ACB38" name="CHAT_STATUS_MESSAGE_FK0">
+<sourceDDLFile>COMUNICARE.SQL.sql</sourceDDLFile>
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-25 02:22:01 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<importedID>3FBB4564-94E4-8BB4-BBB5-563E83213A92</importedID>
+<referredTableLongName>AMEI_COMMUNICARE2.CHAT_MESSAGES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E470771C-C99B-8A65-B0A3-2F88B90610E2</referredTableID>
+<keyObject>F2E1892D-383B-4E30-2CDA-AA7B0109DFF9</keyObject>
+<referredKeyID>F2E1892D-383B-4E30-2CDA-AA7B0109DFF9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

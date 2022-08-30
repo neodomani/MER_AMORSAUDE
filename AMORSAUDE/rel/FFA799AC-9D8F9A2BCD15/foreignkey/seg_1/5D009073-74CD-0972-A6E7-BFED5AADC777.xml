@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="5D009073-74CD-0972-A6E7-BFED5AADC777" containerWithKeyObject="33849619-6240-8DF3-5F63-2DF1B317F1A8" localFKIndex="0B1DD3D4-632C-DB23-BE20-2EB445AC1F46" name="ATENDIMENTO_ALERGIAS_ATENDIMENTOS_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 01:24:23 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>AMEI_APP_DEV.ATENDIMENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FD8BF498-C8E6-C246-FAB1-05D79650649E</referredTableID>
+<keyObject>4BAEA666-23BF-2265-2532-DF22942CA3FA</keyObject>
+<referredKeyID>4BAEA666-23BF-2265-2532-DF22942CA3FA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

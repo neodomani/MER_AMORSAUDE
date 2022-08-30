@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="4C245E41-E141-9679-5D5E-3C18336312E4" containerWithKeyObject="2565FEAB-E3A4-F6A0-BC44-7A4D343360FB" localFKIndex="1F8B411A-F4D7-619B-C502-7DAE75CABF9B" name="ATENDIMENTO_ANTECEDENTES_PARENTESCO_FK">
+<createdBy>andregutierres</createdBy>
+<createdTime>2022-08-27 01:55:16 UTC</createdTime>
+<ownerDesignName>AMORSAUDE</ownerDesignName>
+<referredTableLongName>AMEI_APP_DEV.PARENTESCO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DF3D7081-43AB-AC4F-302E-5CDFA1DA8965</referredTableID>
+<keyObject>D6F2A403-1671-E890-735A-79B86A7CE6C7</keyObject>
+<referredKeyID>D6F2A403-1671-E890-735A-79B86A7CE6C7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
